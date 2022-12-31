@@ -2,10 +2,10 @@ import { Box, width } from '@mui/system';
 import { useState, useEffect} from 'react';
 
 const TrackSearchResult = (props: any) => {
-  const { track } = props;
+  const { track, chooseTrack } = props;
 
   const handlePlay = () => {
-
+    chooseTrack(track)
   }
   return (
     <Box className="TrackSearchResults">

@@ -3,6 +3,7 @@ import useAuth from '../useAuth';
 import Box from '@mui/material/Box';
 import { FormControl, Input } from '@mui/material';
 import TrackSearchResult from './TrackSearchResult';
+import Player from './Player';
 const SpotifyWebApi = require('spotify-web-api-node');
 
 const spotifyApi = new SpotifyWebApi({
@@ -60,7 +61,7 @@ const Dashboard = (props: any) => {
       <Box className='List'>{searchResults.map((track, i) => (
         <TrackSearchResult track={track} key={i} />
       ))}</Box>
-      <Box>Bottom</Box>
+      <Box><Player accessToken={accessToken}/></Box>
     </Box>
   )
 }
