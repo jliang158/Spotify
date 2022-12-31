@@ -1,3 +1,37 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   color: black;
+}
+
+.Box {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .List{
+    flex-grow: 1;
+    margin: 2px;
+    overflow-y: auto;
+  }
+}
+
+.TrackSearchResults {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  cursor: pointer;
+
+  .TitleName {
+    margin-left: 10px;
+    .title {
+
+    }
+    .artist {
+      color: rgb(127, 127, 127);
+    }
+  }
 }
