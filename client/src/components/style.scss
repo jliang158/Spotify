@@ -16,7 +16,13 @@ h1 {
     flex-grow: 1;
     margin: 2px;
     overflow-y: auto;
+
+    .lyrics {
+      text-align: center;
+      white-space: pre;
+    }
   }
+
 }
 
 .TrackSearchResults {

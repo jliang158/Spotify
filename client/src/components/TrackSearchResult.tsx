@@ -8,7 +8,7 @@ const TrackSearchResult = (props: any) => {
     chooseTrack(track)
   }
   return (
-    <Box className="TrackSearchResults">
+    <Box className="TrackSearchResults" onClick={handlePlay}>
       <img src={track.albumUrl} style={{height:'64px', width:'64px'}} alt="images"/>
       <Box className="TitleName">
         <Box className="title">{track.title}</Box>
