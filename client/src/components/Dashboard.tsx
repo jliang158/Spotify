@@ -56,6 +56,7 @@ const Dashboard = (props: Props) => {
     }
     // let cancel = false;
     spotifyApi.searchTracks(search).then((res: any) => {
+      console.log(res)
       // if (cancel) {
       //   return
       // }
